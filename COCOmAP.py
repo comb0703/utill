@@ -9,8 +9,8 @@ os.chdir("./src")
 print(os.getcwd())
 
 # results = 결과 저장한 json 파일명  (dtype:str) , 
-# results 내부 = ["image_id": 1,"category_id": 7, "bbox": [1330.0, 998.0, 175.0, 74.0],"score": 1.0] - 박스가 1개일 경우, 여러 개는 extend
-
+# results 내부 = {"image_id": 1,"category_id": 7, "bbox": [1330.0, 998.0, 175.0, 74.0],"score": 1.0},
+#                   {"image_id": 1,"category_id": 7, "bbox": [1330.0, 998.0, 175.0, 74.0],"score": 1.0}
 # gts = gt json 파일명 (dtype:str)
 # gts 내부 = {'info':{}, 'licenses':{}, 'categories':{}, 'images':{}, 'annotations':{}}
 
